@@ -1,4 +1,6 @@
-﻿namespace WeatherConsole
+using System.Runtime.Serialization;
+
+namespace WeatherConsole
 {
 
 	[DataContract]
