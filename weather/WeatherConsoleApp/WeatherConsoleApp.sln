@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "WeatherConsoleApp", "src\WeatherConsoleApp\WeatherConsoleApp.xproj", "{F92E3E3F-3DE2-4EA4-8D5C-5A6AB00212DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherUWP", "WeatherUWP\WeatherUWP.csproj", "{847FDE8B-4700-451C-9A73-7CA7472C23F1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherUWP", "src\WeatherUWP\WeatherUWP.csproj", "{847FDE8B-4700-451C-9A73-7CA7472C23F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -70,6 +70,5 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F92E3E3F-3DE2-4EA4-8D5C-5A6AB00212DD} = {0EDABDCB-BDBD-4CCF-95FA-E0E4ACFA8C0E}
-		{847FDE8B-4700-451C-9A73-7CA7472C23F1} = {0EDABDCB-BDBD-4CCF-95FA-E0E4ACFA8C0E}
 	EndGlobalSection
 EndGlobal
