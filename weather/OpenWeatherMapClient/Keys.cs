@@ -1,8 +1,8 @@
-﻿namespace WeatherUWP
+﻿namespace OpenWeatherMapClient
 {
 	using System;
 
-	static class Keys
+	public static class Keys
 	{
 		public const string OpenWeatherMapApiKey = "";
 

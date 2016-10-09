@@ -1,4 +1,4 @@
-namespace WeatherUWP
+namespace OpenWeatherMapClient
 {
 	using System.Runtime.Serialization;
 

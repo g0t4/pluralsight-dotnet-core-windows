@@ -2,11 +2,13 @@
 {
 	using System.Threading.Tasks;
 	using static System.Console;
+	using OpenWeatherMapClient;
 
 	public class Program
 	{
 		public static void Main(string[] args)
 		{
+			Keys.ThrowIfKeysNotSet();
 			Run().Wait();
 		}
 
@@ -15,7 +17,7 @@
 			var city = "New York, NY";
 			var client = new OpenWeatherMapClient();
 			WriteLine($"Fetching weather for {city}");
-			var weather = await client.GetCurrentWeatherByCity(city);
+			var weather = await client.GetCurrentWeatherByCityAsync(city);
 			if (weather == null)
 			{
 				WriteLine("Failed to fetch weather information.");
