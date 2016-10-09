@@ -5,12 +5,10 @@
 	static class Keys
 	{
 		public const string OpenWeatherMapApiKey = "";
-		public const string BingMapsToken = "";
 
 		public static void ThrowIfKeysNotSet()
 		{
-			if (string.IsNullOrWhiteSpace(OpenWeatherMapApiKey)
-				|| string.IsNullOrWhiteSpace(BingMapsToken))
+			if (string.IsNullOrWhiteSpace(OpenWeatherMapApiKey))
 			{
 				throw new ArgumentException("You need to add your API keys");
 			}
