@@ -1,5 +1,6 @@
 ﻿namespace WeatherUWP
 {
+	using OpenWeatherMapClient;
 	using System;
 	using System.Collections.Generic;
 	using System.ComponentModel;

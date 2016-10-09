@@ -1,5 +1,6 @@
 ﻿namespace WeatherUWP
 {
+	using OpenWeatherMapClient;
 	using System;
 	using System.Linq;
 	using Windows.Devices.Geolocation;
@@ -20,7 +21,8 @@
 		{
 			InitializeComponent();
 			Keys.ThrowIfKeysNotSet();
-			MapService.ServiceToken = Keys.BingMapsToken;
+			BingKeys.ThrowIfKeysNotSet();
+			MapService.ServiceToken = BingKeys.BingMapsToken;
 			Weather = new WeatherViewModel();
 			Loaded += OnLoaded;
 		}
