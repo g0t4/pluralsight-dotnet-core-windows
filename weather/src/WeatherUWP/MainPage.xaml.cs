@@ -3,6 +3,8 @@
 	using System;
 	using System.Linq;
 	using Windows.Devices.Geolocation;
+	using Windows.Foundation.Metadata;
+	using Windows.Phone.Devices.Power;
 	using Windows.Services.Maps;
 	using Windows.UI.Xaml;
 	using Windows.UI.Xaml.Controls;
@@ -45,7 +47,12 @@
 				return;
 			}
 
-			Weather.Messages = "";
+			var hasApiContract = ApiInformation
+				.IsApiContractPresent("Windows.Phone.PhoneContract", 1);
+
+			Weather.Messages = hasApiContract
+				? $"{Battery.GetDefault().RemainingDischargeTime.TotalHours:0.0} hours remaining"
+				: "";
 
 			var client = new OpenWeatherMapClient();
 			var weather = await client.GetCurrentWeatherAsync(position.Value.Latitude, position.Value.Longitude);
