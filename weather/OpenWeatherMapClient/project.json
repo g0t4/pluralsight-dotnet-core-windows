@@ -6,6 +6,6 @@
     "System.Runtime.Serialization.Primitives": "4.1.1"
   },
   "frameworks": {
-    "netstandard1.3": {}
+    "netstandard1.1": {}
   }
 }
