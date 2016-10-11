@@ -1,4 +1,7 @@
 ﻿{
+  "authors": [ "Wes Higbee" ],
+  "description": "OpenWeatherMap API client",
+  "version":  "1.0.1-*",
   "supports": {},
   "dependencies": {
     "NETStandard.Library": "1.6.0",
