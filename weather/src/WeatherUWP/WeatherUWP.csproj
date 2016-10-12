@@ -134,6 +134,12 @@
       <Name>Windows Mobile Extensions for the UWP</Name>
     </SDKReference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OpenWeatherMapClient\OpenWeatherMapClient.csproj">
+      <Project>{a95cff64-8cec-46d7-8914-297e0b2c8c77}</Project>
+      <Name>OpenWeatherMapClient</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
